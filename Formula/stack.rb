@@ -5,21 +5,21 @@
 class Stack < Formula
   desc "Native Stack Runner (NSR) — Fast, containerless dependency manager"
   homepage "https://github.com/pandusatrianura/NativeStackRunner"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.0/stack_1.1.0_darwin_amd64.tar.gz"
-      sha256 "1eecfd6942b4a1780f13b6f5cd094a8428eb0e5135e9a80bca5448acc3153d1f"
+      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.1/stack_1.1.1_darwin_amd64.tar.gz"
+      sha256 "196f59ff81617d2035c649abaf6677b5241616d3076e80ee98fecc1fd625db2d"
 
       define_method(:install) do
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.0/stack_1.1.0_darwin_arm64.tar.gz"
-      sha256 "ef55e7e60c8d98afc7c4c70f9bc49636421653c2501866aeca0610d51daf395d"
+      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.1/stack_1.1.1_darwin_arm64.tar.gz"
+      sha256 "dbcae74a6eadfe261f4c13217f696982283d8e4aa8f840feca25615e448c1eae"
 
       define_method(:install) do
         bin.install "stack"
@@ -29,15 +29,15 @@ class Stack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.0/stack_1.1.0_linux_amd64.tar.gz"
-      sha256 "1584ef1d44ad67b893fa2bc070c9d72a96f82c557e7d89c0835a7bbf64ee2da9"
+      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.1/stack_1.1.1_linux_amd64.tar.gz"
+      sha256 "d117441d20fc3df57135b9df8b3a37c6084bc296b2df3ed345d276e18f214422"
       define_method(:install) do
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.0/stack_1.1.0_linux_arm64.tar.gz"
-      sha256 "550031ee053ea4bd70fce2718189f8e159e57a32d4ed5c0450b4fe805b90801e"
+      url "https://github.com/pandusatrianura/NativeStackRunner/releases/download/v1.1.1/stack_1.1.1_linux_arm64.tar.gz"
+      sha256 "70ce46e3ebfa9214f5e15673b00ae787780abdbd557aa4c3ed87819b76dc899e"
       define_method(:install) do
         bin.install "stack"
       end
